@@ -124,7 +124,6 @@ There are cases where only one of this can be filled but do prioritize filling `
 
 index.js : *open it if you dare*
 
----
 
 ## TODO
 
@@ -133,19 +132,19 @@ index.js : *open it if you dare*
 
 > *deep breath*
 
-- ~~[-] Add [Mihaaru](https://mihaaru.com)~~
-- ~~[-] Add [Vaguthu](https://vaguthu.mv)~~
-- ~~[-] Add [VNews](https://vnews.mv)~~
+- [-] ~~Add [Mihaaru](https://mihaaru.com)~~
+- [-] ~~Add [Vaguthu](https://vaguthu.mv)~~
+- [-] ~~Add [VNews](https://vnews.mv)~~
 - [!] Add [AvasMV](https://avas.mv/) - blocked by CloudFlare
-- ~~[-] Add [SunOnline](https://sun.mv)~~
-- ~~[-] Add [Raajje](https://raajje.mv/)~~
-- ~~[-] Add [Bonthi News](https://bonthinews.com) - thanks Ibrahim Cade :)~~
-- ~~[-] Add [Miadhu](https://www.miadhu.mv)~~
-- ~~[-] Add [Gazette](https://gazette.gov.mv)~~
-- ~~[-] Add [Mikal News](https://mikalnews.com)~~
-- ~~[-] Add [Fenvaru](https://www.fenvaru.mv)~~
-- ~~[-] Add [Dhen](https://dhen.mv)~~
-- ~~[-] Add [VoiceMV](https://voice.mv)~~
+- [-] ~~Add [SunOnline](https://sun.mv)~~
+- [-] ~~Add [Raajje](https://raajje.mv/)~~
+- [-] ~~Add [Bonthi News](https://bonthinews.com) - thanks Ibrahim Cade :)~~
+- [-] ~~Add [Miadhu](https://www.miadhu.mv)~~
+- [-] ~~Add [Gazette](https://gazette.gov.mv)~~
+- [-] ~~Add [Mikal News](https://mikalnews.com)~~
+- [-] ~~Add [Fenvaru](https://www.fenvaru.mv)~~
+- [-] ~~Add [Dhen](https://dhen.mv)~~
+- [-] ~~Add [VoiceMV](https://voice.mv)~~
 - [ ] Add [Adhadhu](https://adhadhu.com/)
 - [ ] Add [Dhuvas](https://dhuvas.mv/)
 - [ ] Add [DhiIslam](https://dhiislam.com/)
