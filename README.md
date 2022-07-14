@@ -33,9 +33,9 @@ yarn start
 
 # Contributing
 
-It is **highly advised** to not edit index.js as it's basically a black box full of black magic that makes manifest.json work
+It is **highly advised** to not edit index.js as it's basically a black box full of black magic that makes manifest.json work 
 
-### Documentation
+## Documentation
 manifest.json :
 ```js
 {
@@ -85,7 +85,6 @@ manifest.json :
           },
           // everything below this is added to the article as such
           // "[key]": "[regex] (?:which)+ [has|a] (match group) [that|gets]? (?:added)+"
-          "theme": "<meta name=\"theme-color\" content=\"(.*?)\"",
           "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
           "enTitle": "<meta name=\"twitter:title\" content=\"(.*?)\"",
           "dvTitle": "<h1.*>(.*)</h1>",
@@ -104,5 +103,52 @@ manifest.json :
 ```
 > Note: Actual JSON doesn't support comments in any way, so instead of copying this example, use the manifest.json provided in this repo
 
+
+For the URL catchers, I know it's very hard to be consistent with the field names as you can set the fields to be whatever you want but here's a set of common field names to use
+- `thumbnail`: Thumbnail image of the article, preferably one without branding
+
+- `enTitle`: English title of the article, if available
+- `dvTitle`: Dhivehi title of the article, if available
+
+No, don't use `title`, if only one title is available set only the title for the correct language
+
+- `publishedTime`: Date string or UNIX timestamp for when the article was published 
+- `publishedTimeHuman`: Human readable format for the above timestamp
+
+There are cases where only one of this can be filled but do prioritize filling `publishedTime`
+
+- `category`: Category or comma separated list of categories
+- `theme`: Hex colo~~u~~r code for the theme of the article or the website
+
+---
+
 index.js : *open it if you dare*
 
+---
+
+## TODO
+
+- [ ] Add some output to every step of the script
+- [ ] Optimise runtime by making the whole script actually async
+
+> *deep breath*
+
+- ~~[-] Add [Mihaaru](https://mihaaru.com)~~
+- ~~[-] Add [Vaguthu](https://vaguthu.mv)~~
+- ~~[-] Add [VNews](https://vnews.mv)~~
+- [!] Add [AvasMV](https://avas.mv/) - blocked by CloudFlare
+- ~~[-] Add [SunOnline](https://sun.mv)~~
+- ~~[-] Add [Raajje](https://raajje.mv/)~~
+- ~~[-] Add [Bonthi News](https://bonthinews.com) - thanks Ibrahim Cade :)~~
+- ~~[-] Add [Miadhu](https://www.miadhu.mv)~~
+- ~~[-] Add [Gazette](https://gazette.gov.mv)~~
+- ~~[-] Add [Mikal News](https://mikalnews.com)~~
+- ~~[-] Add [Fenvaru](https://www.fenvaru.mv)~~
+- ~~[-] Add [Dhen](https://dhen.mv)~~
+- ~~[-] Add [VoiceMV](https://voice.mv)~~
+- [ ] Add [Adhadhu](https://adhadhu.com/)
+- [ ] Add [Dhuvas](https://dhuvas.mv/)
+- [ ] Add [DhiIslam](https://dhiislam.com/)
+- [ ] Add [Esfiya](https://www.esfiya.com/)
+- [ ] Add [ThePress](https://thepress.mv/)
+- [ ] Add [Dhiyares](https://dhiyares.com/news)
