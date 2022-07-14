@@ -132,19 +132,19 @@ index.js : *open it if you dare*
 
 > *deep breath*
 
-- [-] ~~Add [Mihaaru](https://mihaaru.com)~~
-- [-] ~~Add [Vaguthu](https://vaguthu.mv)~~
-- [-] ~~Add [VNews](https://vnews.mv)~~
-- [!] Add [AvasMV](https://avas.mv/) - blocked by CloudFlare
-- [-] ~~Add [SunOnline](https://sun.mv)~~
-- [-] ~~Add [Raajje](https://raajje.mv/)~~
-- [-] ~~Add [Bonthi News](https://bonthinews.com) - thanks Ibrahim Cade :)~~
-- [-] ~~Add [Miadhu](https://www.miadhu.mv)~~
-- [-] ~~Add [Gazette](https://gazette.gov.mv)~~
-- [-] ~~Add [Mikal News](https://mikalnews.com)~~
-- [-] ~~Add [Fenvaru](https://www.fenvaru.mv)~~
-- [-] ~~Add [Dhen](https://dhen.mv)~~
-- [-] ~~Add [VoiceMV](https://voice.mv)~~
+- [x] Add [Mihaaru](https://mihaaru.com)
+- [x] Add [Vaguthu](https://vaguthu.mv)
+- [x] Add [VNews](https://vnews.mv)
+- [x] Add [AvasMV](https://avas.mv/) - blocked by CloudFlare
+- [x] Add [SunOnline](https://sun.mv)
+- [x] Add [Raajje](https://raajje.mv/)
+- [x] Add [Bonthi News](https://bonthinews.com) - thanks Ibrahim Cade :)
+- [x] Add [Miadhu](https://www.miadhu.mv)
+- [x] Add [Gazette](https://gazette.gov.mv)
+- [x] Add [Mikal News](https://mikalnews.com)
+- [x] Add [Fenvaru](https://www.fenvaru.mv)
+- [x] Add [Dhen](https://dhen.mv)
+- [x] Add [VoiceMV](https://voice.mv)
 - [ ] Add [Adhadhu](https://adhadhu.com/)
 - [ ] Add [Dhuvas](https://dhuvas.mv/)
 - [ ] Add [DhiIslam](https://dhiislam.com/)
