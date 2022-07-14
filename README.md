@@ -37,7 +37,7 @@ It is **highly advised** to not edit index.js as it's basically a black box full
 
 ### Documentation
 manifest.json :
-```json
+```js
 {
   // custom headers to be attached to the HTTP requests
   "headers": {
