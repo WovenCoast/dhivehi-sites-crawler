@@ -77,7 +77,7 @@ async function crawl(url, regexes) {
 async function main() {
   for (const site of manifest.sites) {
     // TODO: temporary testing
-    if (site.name !== "Raajje") continue;
+    // if (site.name !== "Raajje") continue;
 
     if (!site.crawlUrl) site.crawlUrl = site.baseUrl;
     if (!Array.isArray(site.crawlUrl)) site.crawlUrl = [site.crawlUrl];
