@@ -1,0 +1,281 @@
+{
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+  },
+  "sites": [
+    {
+      "name": "Mihaaru",
+      "baseUrl": "https://mihaaru.com",
+      "logo": "https://cdn.mihaaru.com/assets/mhr/images/logo-header.png",
+      "blacklist": [
+        "https://mihaaru.com/info/terms-and-conditions",
+        "https://mihaaru.com/info/privacy-policy"
+      ],
+      "regexes": {
+        "https://mihaaru.com": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://mihaaru.com/(.*?)/(.*)": {
+          "metadata": {
+            "article": true
+          },
+          "theme": "<meta name=\"theme-color\" content=\"(.*?)\"",
+          "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
+          "enTitle": "<meta name=\"twitter:title\" content=\"(.*?)\"",
+          "dvTitle": "<h1.*>(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "publishedTimeHuman": "mx-3 mt-1 leading-none sm:mx-0 text-faseyha\">(.*)</p>",
+          "category": "<meta property=\"article:section\" content=\"(.*?)\""
+        }
+      }
+    },
+    {
+      "name": "Vaguthu",
+      "baseUrl": "https://vaguthu.mv",
+      "logo": "https://vaguthu.mv/wp-content/uploads/2018/02/cropped-1511219_704928572951263_5369153983616557953_n-1-180x180.png",
+      "blacklist": [],
+      "regexes": {
+        "https://vaguthu.mv": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://vaguthu.mv/(.*?)/(.*)": {
+          "metadata": {
+            "article": true
+          },
+          "theme": "<meta name=\"theme-color\" content=\"(.*?)\"",
+          "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
+          "enTitle": "<title>\\s+(.*)\\s+- Vaguthu </title>",
+          "dvTitle": "<h1 class=\"heading\">\\n+\\s+(.+?)\\s+</h1>",
+          "publishedTimeHuman": "fas fa-clock.*\\n.*\\n.*\\(\\n\\s+(.*)\\s+\\)",
+          "category": "property=\"og:url\" content=\"https://vaguthu.mv/(.+?)/"
+        }
+      }
+    },
+    {
+      "name": "VNews",
+      "baseUrl": "https://vnews.mv",
+      "logo": "https://vnews.mv/public/images/favicon.png?v=1",
+      "blacklist": [],
+      "regexes": {
+        "https://vnews.mv": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://vnews.mv/(\\d+)": {
+          "metadata": {
+            "article": true
+          },
+          "theme": "<meta name=\"theme-color\" content=\"(.*?)\"",
+          "thumbnail": "news-image.*\\n.*src=\"(.*)\" w",
+          "enTitle": "<meta name=\"twitter:title\" content=\"(.*?)\"",
+          "dvTitle": "<h1.*>(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "publishedTimeHuman": "fa fa-clock.*\\n(.*)\\s</strong>",
+          "category": "<meta property=\"article:section\" content=\"(.*?)\""
+        }
+      }
+    },
+    {
+      "name": "SunOnline",
+      "baseUrl": "https://sun.mv",
+      "logo": "https://sun.mv/public/assets/favicon.png?v=1",
+      "blacklist": [],
+      "regexes": {
+        "https://sun.mv": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://sun.mv/(\\d+)": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#ff0000"
+            }
+          },
+          "thumbnail": "figure>\\n.*src=\"(.*)\" c",
+          "enTitle": "<meta property=\"og:title\" content=\"(.*?)\"",
+          "dvTitle": "<h1>(.*)</h1>"
+        }
+      }
+    },
+    {
+      "name": "Raajje",
+      "baseUrl": "https://raajje.mv",
+      "logo": "https://raajje.mv/images/raajje_logo.svg",
+      "regexes": {
+        "https://raajje.mv": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://raajje.mv/(\\d+)": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#b91c1c"
+            }
+          },
+          "thumbnail": "data-src=\"(.*?)\" loading=\"lazy\" class=\"object-cover lazy w-full h-60 lg:h-115",
+          "enTitle": "<meta name=\"og:title\" content=\"(.*?)\"",
+          "dvTitle": "my-5 text-gray-800 text-4xl  aammu leading-relaxed\">\\n(.*)",
+          "publishedTimeHuman": "text-gray-400 mx-1 \">\\n(.*)",
+          "category": "inline-block px-3 py-1  lg:px-4 lg:py-2 border border-gray-200 text-gray-500 text-xs rounded-full hover:bg-red-700 hover:text-white mb-1\".*href=\"https://raajje.mv/tag/(.+)\""
+        }
+      }
+    },
+    {
+      "name": "Bonthi News",
+      "baseUrl": "https://bonthinews.com",
+      "logo": "https://bonthinews.com/wp-content/uploads/2021/06/cropped-oodfo-180x180.png",
+      "regexes": {
+        "https://bonthinews.com": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://bonthinews.com/(\\d+)/": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#ff0000"
+            }
+          },
+          "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
+          "enTitle": "<meta property=\"og:title\" content=\"(.*?)\"",
+          "dvTitle": "post-title\">\\n\\s+(.*)</",
+          "publishedTime": "\">\\n\\s+(.*)</time>"
+        }
+      }
+    },
+    {
+      "name": "Miadhu",
+      "baseUrl": "https://www.miadhu.mv",
+      "logo": "https://www.miadhu.mv/images/apple-icon-180x180.png",
+      "regexes": {
+        "https://www.miadhu.mv": {
+          "url": "<a href=\"(.*?)\""
+        },
+        "https://www.miadhu.mv/article/read/(\\d+)": {
+          "metadata": {
+            "article": true
+          },
+          "theme": "<meta name=\"theme-color\" content=\"(.*?)\"",
+          "thumbnail": "col-md-12\">\\n.*<img.*src=\"(.*)\" a",
+          "enTitle": "<meta property=\"og:title\" itemprop=\"name\" content=\"(.*?)\"",
+          "dvTitle": "<h1.*>(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "publishedTimeHuman": "article-date dv\">(.*)</",
+          "category": "<meta property=\"article:section\" content=\"(.*?)\""
+        }
+      }
+    },
+    {
+      "name": "Gazette",
+      "baseUrl": "https://gazette.gov.mv",
+      "logo": "https://gazette.gov.mv/assets/images/emblem.png",
+      "crawlUrl": "https://gazette.gov.mv/iulaan",
+      "regexes": {
+        "https://gazette.gov.mv/iulaan": {
+          "url": "<a.*href=\"(.*?)\""
+        },
+        "https://gazette.gov.mv/iulaan/(\\d+)": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "thumbnail": "https://gazette.gov.mv/assets/images/logo.png",
+              "theme": "#ffffff"
+            }
+          },
+          "category": "<meta property=\"og:type\"\\s+content=\"(.*)\"",
+          "dvTitle": "<meta property=\"og:description\"\\s+content=\"(.*)\"",
+          "publishedTimeHuman": "class=\"info\">ޕަބްލިޝްކުރި ތާރީޚު: (.*)</.*\\n.*ޕަބްލިޝްކުރި ގަޑި:(.*)</"
+        }
+      }
+    },
+    {
+      "name": "Mikal News",
+      "baseUrl": "https://mikalnews.com",
+      "logo": "https://mikalnews.com/wp-content/uploads/2020/11/logo-250x150.jpg",
+      "regexes": {
+        "https://mikalnews.com": {
+          "url": "<a.*href=\"(.*?)\""
+        },
+        "https://mikalnews.com/(.*)/(\\d+)/?": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#f56600"
+            }
+          },
+          "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
+          "dvTitle": "<h1.*>(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "category": "property=\"og:url\" content=\"https://mikalnews.com/(.+?)/"
+        }
+      }
+    },
+    {
+      "name": "Fenvaru",
+      "baseUrl": "https://www.fenvaru.mv",
+      "logo": "https://fenvaru.mv/wp-content/uploads/2021/05/icon-300x300.png",
+      "regexes": {
+        "https://www.fenvaru.mv": {
+          "url": "<a.*href=\"(.*?)\""
+        },
+        "https://www.fenvaru.mv/(\\d+)/?": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#ff0000"
+            }
+          },
+          "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
+          "enTitle": "<meta property=\"og:title\" content=\"(.*)\" />",
+          "dvTitle": "<h1.*>(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "category": "<meta property=\"article:section\" content=\"(.*?)\""
+        }
+      }
+    },
+    {
+      "name": "Dhen",
+      "baseUrl": "https://dhen.mv",
+      "logo": "https://dhen.mv/wp-content/uploads/2020/08/cropped-dhen-favicon-1-192x192.png",
+      "regexes": {
+        "https://dhen.mv": {
+          "url": "<a.*href=\"(.*?)\""
+        },
+        "https://dhen.mv/(\\d+)/?": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#12a89e"
+            }
+          },
+          "thumbnail": "<meta property=\"og:image\" content=\"(.*?)\"",
+          "enTitle": "<meta property=\"og:title\" content=\"(.*) ― Dhen.mv\"",
+          "dvTitle": "<h1.*>\n(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "category": "<meta property=\"article:section\" content=\"(.*?)\""
+        }
+      }
+    },
+    {
+      "name": "VoiceMV",
+      "baseUrl": "https://voice.mv",
+      "logo": "https://voice.mv/wp-content/uploads/2021/08/xwhite-default-logo.png.pagespeed.ic.6KgIuijeQ0.png",
+      "regexes": {
+        "https://voice.mv": {
+          "url": "<a.*href=\"(.*?)\""
+        },
+        "https://voice.mv/(\\d+)/?": {
+          "metadata": {
+            "article": true,
+            "overrides": {
+              "theme": "#ff5722"
+            }
+          },
+          "thumbnail": "src=\"(.*)\".*class=\"attachment-full size-full\"",
+          "enTitle": "<meta property=\"og:title\" content=\"(.*)\"",
+          "dvTitle": "<h1.*>(.*)</h1>",
+          "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
+          "category": "elementor-post-info__terms-list-item\">(.*?)</a"
+        }
+      }
+    }
+  ]
+}
