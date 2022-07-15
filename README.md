@@ -27,9 +27,9 @@ node index.js
 npm start
 # or
 yarn start
-# or - okay you get the gist of it
+# or- okay you get the gist of it
 ```
-> Note: This script is meant to be used along with another script that reads the output articles.json file and store it in a database but this is done externally 
+> Note: This script is meant to be used along with another script that reads the files in output/ and store it accordingly in a database but this is done externally 
 
 # Contributing
 
@@ -76,7 +76,7 @@ manifest.json :
           // optional - dictates metadata that is passed through every crawl res that matches the key regex
           "metadata": {
             // optional - invokes the logic that parses articles
-            // similar flags can be implemented by adding below LN136
+            // similar flags can be implemented in index.js
             "article": true,
             // optional - includes data that is fixed and doesn't have to be found dynamically for every article 
             "overrides": {
@@ -91,7 +91,7 @@ manifest.json :
           "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
           "publishedTimeHuman": "mx-3 mt-1 leading-none sm:mx-0 text-faseyha\">(.*)</p>",
           "category": "<meta property=\"article:section\" content=\"(.*?)\""
-          // the script adds a few more properties that cannot be overridden, the code that does this is in LN126
+          // the script adds a few more properties that cannot be overridden
           // "url": *the url that was crawled for this specific data*,
           // "website": *the name property of whichever site the script is crawling*
           // "crawledOn": *JS date string that was taken when this url was crawled*
@@ -127,8 +127,9 @@ index.js : *open it if you dare*
 
 ## TODO
 
-- [ ] Add some output to every step of the script
+- [x] Add some output to every step of the script
 - [ ] Optimise runtime by making the whole script actually async
+- [ ] Add implementation for transforms in metadata
 
 > *deep breath*
 

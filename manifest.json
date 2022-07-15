@@ -269,7 +269,7 @@
               "theme": "#ff5722"
             }
           },
-          "thumbnail": "src=\"(.*)\".*class=\"attachment-full size-full\"",
+          "thumbnail": "height=\"661\" src=\"(.*)\".*class=\"attachment-full size-full\"",
           "enTitle": "<meta property=\"og:title\" content=\"(.*)\"",
           "dvTitle": "<h1.*>(.*)</h1>",
           "publishedTime": "<meta property=\"article:published_time\" content=\"(.*?)\"",
