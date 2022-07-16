@@ -6,7 +6,8 @@ Prefixes: `!` - breaking changes, `?` - possibly buggy
 
 ---
 
-## v1.0.1
+## v1.1.0
+
 - `feat` Added some output to every step of the script
 - `bugs` Fixed [VoiceMV](https://voice.mv) thumbnail issue
 - `?!` `feat` Changed script output from articles.json to output/articles.json
@@ -14,6 +15,7 @@ Prefixes: `!` - breaking changes, `?` - possibly buggy
 - `docs` Added [CHANGELOG.md](https://github.com/WovenCoast/dhivehi-sites-crawler/blob/main/CHANGELOG.md)
 
 ## v1.0.0
+
 - `site` Added [Mihaaru](https://mihaaru.com)
 - `site` Added [Vaguthu](https://vaguthu.mv)
 - `site` Added [VNews](https://vnews.mv)
