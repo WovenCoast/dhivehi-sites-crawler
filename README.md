@@ -136,7 +136,7 @@ index.js : *open it if you dare*
 - [x] Add [Mihaaru](https://mihaaru.com)
 - [x] Add [Vaguthu](https://vaguthu.mv)
 - [x] Add [VNews](https://vnews.mv)
-- [x] Add [AvasMV](https://avas.mv/) - blocked by CloudFlare
+- [ ] Add [AvasMV](https://avas.mv/) - blocked by CloudFlare
 - [x] Add [SunOnline](https://sun.mv)
 - [x] Add [Raajje](https://raajje.mv/)
 - [x] Add [Bonthi News](https://bonthinews.com) - thanks Ibrahim Cade :)
