@@ -80,7 +80,7 @@ async function main() {
   let lastCount = 0;
   for (const site of manifest.sites) {
     // TODO: temporary testing
-    if (site.name !== "VoiceMV") continue;
+    // if (site.name !== "VoiceMV") continue;
 
     if (!site.crawlUrl) site.crawlUrl = site.baseUrl;
     if (!Array.isArray(site.crawlUrl)) site.crawlUrl = [site.crawlUrl];
