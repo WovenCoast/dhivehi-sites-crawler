@@ -92,7 +92,7 @@ async function main() {
     for (const crawlUrl of site.crawlUrl) {
       const initRes = await crawl(crawlUrl, site.regexes);
       // console.log(initRes);
-      if (!initRes.url) continue;
+      if (!initRes || !initRes.url) continue;
       urls = [...urls, ...initRes.url];
     }
     // console.log(site.crawlUrl, urls);
